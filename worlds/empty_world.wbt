@@ -1,0 +1,66 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.019813713307271733 0.9905535704183515 0.13568729084344328 0.29272644332198255
+  position -1.8129889259280372 -0.10659753948232764 0.3611277944324178
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+  floorAppearance NULL
+}
+Transform {
+  scale 0.0075 0.0075 0.0075
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Mesh {
+        url [
+          "../../../Downloads/Smashing Lahdi-Wolt/tinker.obj"
+        ]
+      }
+    }
+  ]
+}
+E-puck {
+  hidden position_0_0 3.060719075696705e-08
+  hidden position_0_1 3.060717514575872e-08
+  hidden linearVelocity_0 0 -3.96612970575407e-15 -1.5631940186722204e-15
+  hidden angularVelocity_0 1.7017781152763784e-13 0 0
+  hidden translation_1 0 0.026 0.02
+  hidden rotation_1 0 1 0 2.9802322387695313e-08
+  hidden linearVelocity_1 0 2.0810225135882164e-14 1.3328064357412282e-16
+  hidden angularVelocity_1 1.359454961129209e-13 0 0
+  hidden translation_2 0 -0.026 0.02
+  hidden rotation_2 0 1 0 2.9802322387695313e-08
+  hidden linearVelocity_2 0 -3.0406911951794004e-14 1.1990734289661246e-15
+  hidden angularVelocity_2 4.758095297482604e-13 0 0
+  translation 0 1.7739758378520812e-11 -6.396199578871144e-05
+  rotation 1 0 0 2.4431802199737966e-09
+  controller "lfr_py"
+  groundSensorsSlot [
+    DistanceSensor {
+      translation 0 0.01 0
+      rotation 0 1 0 1.5708
+      name "ir0"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0 -0.01 0
+      rotation 0 1 0 1.5708
+      name "ir1"
+      type "infra-red"
+    }
+  ]
+}
