@@ -10,7 +10,6 @@ def run_robot(robot):
     timestep = 32
     max_speed = 6.28 * 0.25 #angular velocity
     
-    #created motor instances 
     left_motor = robot.getDevice('left wheel motor')
     right_motor = robot.getDevice('right wheel motor')
     
