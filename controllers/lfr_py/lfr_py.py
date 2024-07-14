@@ -42,14 +42,7 @@ def run_robot(robot):
         
         left_speed = max_speed
         right_speed = max_speed
-        
-        # if rot_start_time < current_time < rot_end_time:
-            # left_speed = -max_speed
-            # right_speed = max_speed
-            
-        # elif current_time > rot_end_time:
-                # rot_start_time = current_time + duration_side
-                # rot_end_time = rot_start_time + duration_turn
+       
             
         if (left_ir_value > right_ir_value) and ( 6 < left_ir_value < 15):
             print('Go left')
