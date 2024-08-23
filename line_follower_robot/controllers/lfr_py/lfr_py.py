@@ -1,8 +1,5 @@
 """line_follower_robot."""
 
-# You may need to import some classes of the controller module. Ex:
-#  from controller import Robot, Motor, DistanceSensor
-from controller import Robot
 
 def run_robot(robot):
     
