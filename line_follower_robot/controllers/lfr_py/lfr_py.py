@@ -1,5 +1,5 @@
 """line_follower_robot."""
-
+from controller import Robot
 
 def run_robot(robot):
     
